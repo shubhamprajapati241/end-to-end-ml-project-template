@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def predict_datapoints():
     if request.method == "GET":
-        return render_template("form.html")
+        return render_template("index.html")
     else:
         # data=CustomData( 
         #     carat=float(request.form.get('carat')),
